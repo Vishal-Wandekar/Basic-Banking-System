@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:background="#e8adaa">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/rlFavorites">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerRestaurants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txtSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Customers You Want to Transfer Money....."
+        android:textSize="30dp"
+        android:textColor="#ff0000"/>
+    <ImageView
+        android:id="@+id/imgRestaurantThumbnail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/tony_stark_new"
+        android:layout_marginTop="100dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgRestaurantThumbnail1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+
+        android:background="@drawable/res_image_background"
+        android:src="@drawable/image2"
+        />
+    <ImageView
+        android:id="@+id/imgRestaurantThumbnail2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:background="@drawable/res_image_background"
+        android:src="@drawable/img1"
+        />
+</FrameLayout>
